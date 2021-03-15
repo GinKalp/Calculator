@@ -120,8 +120,8 @@ public class JavaCalculator {
         btnPlus.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                total1= total1 + Double.parseDouble(textDisplay.getText());
-                textDisplay.setText("");
+                String button_text = btnPlus.getText();
+                getOperator(button_text);
 
             }
         });
