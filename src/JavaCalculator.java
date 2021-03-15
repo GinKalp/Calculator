@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -137,6 +135,10 @@ public class JavaCalculator {
                         break;
                     case '/':
                         total2 = total1 / Double.parseDouble(textDisplay.getText());
+                        if
+                        (Double.parseDouble(textDisplay.getText())==0) {
+                        textDisplay.setText("Daugyba is nulio negalima");
+                        }
                         break;
                     case '*':
                         total2 = total1 * Double.parseDouble(textDisplay.getText());
